@@ -1,0 +1,28 @@
+{
+  "name": "spunkySlider",
+  "title": "Spunky Slider",
+  "description": "Beautiful jquery slider with easy to use customized html attributes",
+  "version": "0.0.5",
+  "homepage": "https://github.com/kshirish/Spunky-Slider/",
+  "author": {
+    "name": "kshirish",
+    "url": "https://github.com/kshirish/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kshirish/Spunky-Slider/"
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">= 1.4"
+  },
+  "keywords": [
+    "ui", "jquery", "slider", "range"
+  ]
+}
