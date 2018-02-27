@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "name": "I most value",
+    "answers": {
+      "red": "Tradition",
+      "white": "Relationships",
+      "green": "Knowledge",
+      "blue": "Freedom"
+    }
+  },
+  {
+    "id": 1,
+    "name": "On a plane, do you think you would be best as?",
+    "answers": {
+      "red": "Flight engineer",
+      "white": "Chief pilot",
+      "green": "Co-pilot",
+      "blue": "Navigator"
+    }
+  },
+  {
+    "id": 2,
+    "name": "When you're given a briefing paper, what do you do with it?",
+    "answers": {
+      "red": "Skim it for the salient points",
+      "white": "Read it carefully and act on it",
+      "green": "Rewrite it and send it back",
+      "blue": "Send it back, I issue briefing papers, I don't read them"
+    }
+  },
+  {
+    "id": 3,
+    "name": "In a conversation, what are you aiming for?",
+    "answers": {
+      "red": "A consensus",
+      "white": "A solution",
+      "green": "Inspiration",
+      "blue": "Agreement"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Which of these things do you value most about employment?",
+    "answers": {
+      "red": "Security",
+      "white": "Stimulation",
+      "green": "Challenge",
+      "blue": "Status"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Which of these things would make you happiest?",
+    "answers": {
+      "red": "A life in which others look up to me",
+      "white": "A life in which I ploughed my own furrow",
+      "green": "A happy exciting life",
+      "blue": "A quiet contented life"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Which of these activities might suit you best?",
+    "answers": {
+      "red": "Running with friends",
+      "white": "Running alone",
+      "green": "Free running",
+      "blue": "Running a relay race"
+    }
+  }
+]

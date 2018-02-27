@@ -133,410 +133,508 @@ body {
 }
 
 .works__container {
-  position: relative;
-  z-index: 10;
-
-  .up {
-    position: fixed;
-    font-family: $font-main;
-    font-size: 100px;
-    right: 10px;  
-    bottom: 10px;
-    text-decoration: none;
-    color: #000000;
-    z-index: 20;
-    width: 50px;
-    height: 50px;
-    line-height: 90px;
-    border-radius: 50%;
-    background-color: rgba(255,255,255,0.6);
+    position: relative;
+    z-index: 10;
+    width: 60%;
     margin: 0 auto;
-    text-align: center;
-  }
 
-  .title {
-    padding: 50px 0 50px 0;
-    text-align: center;
-    font-size: 60px;
-    font-family: $font-subtitle;    
-  }
-
-  .works__items {
-    text-align: center;
-    padding: 50px 0;
-
-    .works-item {
-      text-decoration: none;
-      display: inline-block;
-      height: 160px;
-      width: 160px;
-      border-radius: 50%;
-      margin: 0 10px;
-      font-family: $font-main;
-      font-size: 14px;
-      line-height: 160px;
-      color: #fff;
-      overflow: hidden;
-      background-color: #000;
-      -webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
-      -moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
-      box-shadow: 0px 20px 100px 0px rgba(0,0,0,0.3);
-      transition-duration: 4s;      
-
-      &--web1 {
-        background-size: 0;
-
-        &:after {
-          content: "Bike Web";
-          color: #fff;
-          font-family: $font-main;
-          font-size: 20px;
-        }
-
-        &:hover {
-          background: transparent url('../img/work.jpg') center center no-repeat;
-          background-size: cover;
-          &:after {
-            display: none;
-          }
-        }
-      }
-
-      &--web2 {
-        background-size: 0;
-
-        &:after {
-          content: "Photography";
-          color: #fff;
-          font-family: $font-main;
-          font-size: 20px;
-        }
-
-        &:hover {
-          background: transparent url("../img/photography.jpg") center center no-repeat;
-          background-size: cover;
-          &:after {
-            display: none;
-          }
-        }
-      }
-      
-      &--web3 {
-        background-size: 0;
-        
-        &:after {
-          content: "Slider";
-          color: #fff;
-          font-family: $font-main;
-          font-size: 20px;
-        }
-
-        &:hover {
-          background: transparent url("../img/slider.jpg") center center no-repeat;
-          background-size: cover;
-          &:after {
-            display: none;
-          }
-        }
-      }
-
-      &--web4 {
-        background-size: 0;
-
-        &:after {
-          content: "Menu"; 
-          color: #fff;
-          font-family: $font-main;
-          font-size: 20px;
-        }
-
-        &:hover {
-          background: transparent url("../img/menu.jpg") center center no-repeat;
-          background-size: cover;
-          &:after {
-            display: none;
-          }
-        }
-      }
+    .up {
+        position: fixed;
+        font-family: $font-main;
+        font-size: 100px;
+        right: 10px;
+        bottom: 10px;
+        text-decoration: none;
+        color: #000000;
+        z-index: 20;
+        width: 50px;
+        height: 50px;
+        line-height: 90px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.6);
+        margin: 0 auto;
+        text-align: center;
     }
-  }
+
+    .title {
+        padding: 50px 0 50px 0;
+        text-align: center;
+        font-size: 60px;
+        font-family: $font-subtitle;
+    }
+
+    .works__items {
+        text-align: center;
+        padding: 50px 0;
+
+        .works-item {
+            text-decoration: none;
+            display: inline-block;
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            margin: 0 10px 20px 10px;
+            font-family: $font-main;
+            font-size: 16px;
+            vertical-align: middle;
+            color: #fff;
+            -webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
+            box-shadow: 0px 20px 100px 0px rgba(0,0,0,0.3);
+
+            &--web1 {
+                background: transparent url("../img/colorcode.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "Color Quiz\A HTML/SCSS/Angularjs \A the SAP \A with color test \A personality";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            &--web2 {
+                background: transparent url("../img/todolist.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "To do list\A HTML/SCSS/JS \A the  simple to do list \A with tasks displayed \A on a single note page";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            &--web3 {
+                background: transparent url("../img/game.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "My first game \A HTML/SCSS/jQuery \A the simple game \A with click on the ball";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            &--web4 {
+                background: transparent url('../img/work.jpg') center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "Bike Web \A HTML/SCSS/JS \A the exemplary web \A with basic JS";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            &--web5 {
+                background: transparent url("../img/slider.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "Slider \A HTML/SCSS/JS \A a fullscreen slider \A gallery";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            &--web6 {
+                background: transparent url("../img/menu.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "Menu \A HTML/SCSS/JS/ \A jQuery \A the exemplary drill \A down menus \A in JS and jQuery";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            &--web7 {
+                background: transparent url("../img/gallery.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "Gallery\A HTML/SCSS/jQuery \A the gallery of \A my own visualisations";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            &--web8 {
+                background: transparent url("../img/photography.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "Photography \A HTML/SCSS \A my first web \A with responsive photos";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .about__container {
-  text-align: center;
-  font-family: $font-main;
-  width: 100%;
-
-  .title {
-    padding: 50px 0 80px 0;
-    font-size: 60px;
-    font-family: $font-subtitle;    
-  }
-
-  .about-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-
-  .about-me {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 100px 10px 50px 10px;
-    font-size: 25px;
-  }
-
-  .resume__icon {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 40px;
-
-    .icon {
-      display: block;
-      text-decoration: none;
-      height: 80px;
-      width: 80px;
-      border-radius: 50%;
-      font-family: $font-main;
-      font-size: 20px;
-      line-height: 80px;
-      background-color: #000;
-      color: #fff;
-      border: 3px solid transparent;
-      cursor: pointer;
-      position: relative;
-      &:hover {
-        -webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
-        -moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
-        box-shadow: 0px 20px 100px 0px rgba(0,0,0,0.3);
-  
-      }
-      
-      &:after {
-        content: "^";
-        transform: rotate(180deg);
-        transform-origin: center;
-        color: #fff;
-        display: block;
-        font-family: $font-main;
-        font-size: 60px;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        bottom: 5px;
-        height: 60px;
-        top: 30px;
-      }
-      
-      &--active {
-      background-color: transparent;
-      border: 1px solid #000; 
-
-        &:after {
-          content: "^";
-          transform: rotate(0);
-          transform-origin: center;          
-          color: #000;
-          display: block;
-          font-family: $font-main;
-          font-size: 60px;
-          position: absolute;
-          top: 35px;
-          height: 60px;
-        }  
-      }
-    }
-  }  
-  
-  .resume__container {
-    display: none;
-    width: 50%;
-    margin: 0 auto;
-    padding-left: 40px;
-  
-    .resume__contain {
-      width: 100%;
-      text-align: left;
-      display: block;
-      border-left: 1px solid #000;
-      float: left;      
-
-      .resume__part {
-        .resume__main {
-          font-family: $font-main;
-          font-weight: bold;
-          font-size: 30px;
-          display: block;
-          padding: 70px 0 40px 0;
-          position: relative;
-          padding-left: 50px;  
-
-          &:before {
-            content: "";
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #000;
-            position: absolute;
-            z-index: 10;
-            left: -20px;
-          }
-
-          &--last {
-            text-decoration: none;
-            &:after {
-              content: '^';
-              position: absolute;
-              color: #fff;
-              font-family: $font-main;
-              font-size: 50px;
-              left: -9px;
-              text-decoration: none;
-              cursor: pointer;
-              z-index: 15;
-            }  
-          }
-        }
-
-        .resume-info {
-          padding-left: 50px;                
-          .info-up {
-            font-size: 20px;
-            font-weight: bold;          
-            padding: 30px 0 10px 0;
-            border-bottom: 0.1px solid rgb(209, 209, 209);
-          }
-          .info-down {
-            font-size: 16px;
-            padding: 2px 0;
-          }
-        }
-      }
-    }    
-  }  
-
-  .skills__container {
     text-align: center;
     font-family: $font-main;
-    width: 60%;  
-    margin: 0 auto;
+    width: 100%;
 
-    .skills-title {
-      padding: 80px 0;
-      font-size: 60px;
-      font-family: $font-subtitle;
-      }
-
-    .skills {
-      width: 100%;
-      text-align: center;
-      height: auto;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      
-      .skill-item {
-        width: 160px;
-        height: 160px;
-        line-height: 160px;
-        vertical-align: middle;
-        font-size: 50px;
-        display: inline-block;
-        margin: 20px 10px;
-        border-radius: 50%;
-        background-color: #ffffff;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,.35), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
-        border: 5px solid transparent;
-
-        .skill-ps {
-          width: 80%;
-          margin-top: 35px;
-          &:hover {
-            opacity: 0.0;
-          }  
-        }
-
-        .skill-ai {
-          width: 80%;
-          margin-top: 35px;
-          &:hover {
-            opacity: 0.0;
-          }  
-        }
-
-        .skill-git {
-          width: 85%;
-          margin-top: 40px;
-        }
-
-        .skill-rwd {
-          width: 85%;
-          margin-top: 35px;
-        }
-
-        &:after {
-          background-color: #000000;
-          position: absolute;
-          content:'';
-          top: 0;
-          left: 0;
-          color: #fff;
-          font-size: 0.5em;
-          width: 100%;
-          display: none;  
-        }
-
-        &--html {
-          &:after{
-            content: "HTML";
-          }
-        }
-
-        &--css {
-          &:after{
-            content: "CSS/SASS";
-          }
-        }
-
-        &--js {
-          &:after{
-            content: "JS";
-          }
-        }
-        &--jq {
-          &:after{
-            content: "JQUERY";
-          }
-        }
-        &--ps {
-          &:after{
-            content: "PS/AI";
-          }
-        }
-
-        &--git {
-          &:after{
-            content: "GIT";
-          }
-        }
-        &--rwd {
-          &:after{
-            content: "RWD";
-          }
-        } 
-
-        &:hover {
-          box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
-          border-color: #fff;
-          &:after {
-            display: block;     
-          }
-        }  
-      }
+    .title {
+        padding: 50px 0 80px 0;
+        font-size: 60px;
+        font-family: $font-subtitle;
     }
-  }
+
+    .about-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .about-me {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 100px 10px 50px 10px;
+        font-size: 25px;
+    }
+
+    .resume__icon {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        .icon {
+            display: block;
+            text-decoration: none;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            font-family: $font-main;
+            font-size: 20px;
+            line-height: 80px;
+            background-color: #000;
+            color: #fff;
+            border: 3px solid transparent;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                -webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
+                -moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
+                box-shadow: 0px 20px 100px 0px rgba(0,0,0,0.3);
+            }
+
+            &:after {
+                content: "^";
+                transform: rotate(180deg);
+                transform-origin: center;
+                color: #fff;
+                display: block;
+                font-family: $font-main;
+                font-size: 60px;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                bottom: 5px;
+                height: 60px;
+                top: 30px;
+            }
+
+            &--active {
+                background-color: transparent;
+                border: 1px solid #000;
+
+                &:after {
+                    content: "^";
+                    transform: rotate(0);
+                    transform-origin: center;
+                    color: #000;
+                    display: block;
+                    font-family: $font-main;
+                    font-size: 60px;
+                    position: absolute;
+                    top: 35px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    .resume__container {
+        display: none;
+        width: 50%;
+        margin: 0 auto;
+        padding-left: 40px;
+
+        .resume__contain {
+            width: 100%;
+            text-align: left;
+            display: block;
+            border-left: 1px solid #000;
+            float: left;
+
+            .resume__part {
+                .resume__main {
+                    font-family: $font-main;
+                    font-weight: bold;
+                    font-size: 30px;
+                    display: block;
+                    padding: 70px 0 40px 0;
+                    position: relative;
+                    padding-left: 50px;
+
+                    &:before {
+                        content: "";
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: #000;
+                        position: absolute;
+                        z-index: 10;
+                        left: -20px;
+                    }
+
+                    &--last {
+                        text-decoration: none;
+
+                        &:after {
+                            content: '^';
+                            position: absolute;
+                            color: #fff;
+                            font-family: $font-main;
+                            font-size: 50px;
+                            left: -9px;
+                            text-decoration: none;
+                            cursor: pointer;
+                            z-index: 15;
+                        }
+                    }
+                }
+
+                .resume-info {
+                    padding-left: 50px;
+
+                    .info-up {
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 30px 0 10px 0;
+                        border-bottom: 0.1px solid rgb(209, 209, 209);
+                    }
+
+                    .info-down {
+                        font-size: 16px;
+                        padding: 2px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .skills__container {
+        text-align: center;
+        font-family: $font-main;
+        width: 50%;
+        margin: 0 auto;
+
+        .skills-title {
+            padding: 80px 0;
+            font-size: 60px;
+            font-family: $font-subtitle;
+        }
+
+        .skills {
+            width: 100%;
+            text-align: center;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+            .skill-item {
+                width: 140px;
+                height: 140px;
+                line-height: 140px;
+                vertical-align: middle;
+                font-size: 40px;
+                display: inline-block;
+                margin: 20px 10px;
+                border-radius: 50%;
+                background-color: #ffffff;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 1px 3px 0 rgba(0,0,0,.35), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+                border: 5px solid transparent;
+
+                .skill-ps {
+                    width: 80%;
+                    margin-top: 35px;
+
+                    &:hover {
+                        opacity: 0.0;
+                    }
+                }
+
+                .skill-ai {
+                    width: 80%;
+                    margin-top: 35px;
+
+                    &:hover {
+                        opacity: 0.0;
+                    }
+                }
+
+                .skill-git {
+                    width: 85%;
+                    margin-top: 40px;
+                }
+
+                .skill-rwd {
+                    width: 85%;
+                    margin-top: 35px;
+                }
+
+                &:after {
+                    background-color: #000000;
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    color: #fff;
+                    font-size: 0.5em;
+                    width: 100%;
+                    display: none;
+                }
+
+                &--html {
+                    &:after {
+                        content: "HTML";
+                    }
+                }
+
+                &--css {
+                    &:after {
+                        content: "CSS/SASS";
+                    }
+                }
+
+                &--js {
+                    &:after {
+                        content: "JS";
+                    }
+                }
+
+                &--ng {
+                    &:after {
+                        content: "ANGULARJS";
+                    }
+                }
+
+                &--jq {
+                    &:after {
+                        content: "JQUERY";
+                    }
+                }
+
+                &--ps {
+                    &:after {
+                        content: "PS/AI";
+                    }
+                }
+
+                &--git {
+                    &:after {
+                        content: "GIT";
+                    }
+                }
+
+                &--rwd {
+                    &:after {
+                        content: "RWD";
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+                    border-color: #fff;
+
+                    &:after {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .contact__container {
@@ -602,186 +700,268 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 767px)  {
-  .works__container {
-    .works__items {
-      .works-item {
-        width: 130px;
-        height: 130px;
-        line-height: 130px;  
-        margin: 20px 10px;
-      }
-    }
-  }
+@media screen and (max-width: 768px)  {
+    .works__container {
+        .works__items {
+            .works-item {
+                margin: 20px 10px;
 
-  .about__container {
-    .about-me {
-      width: 80%;
-    }
+                &--web1 {
+                    background: #000;
 
-    .resume__icon {
-      .icon {
-        margin: 0 auto;
-        &--active {
-          background-color: #000;
-          margin: 0 auto;
-          color: #fff;
-          border: 3px solid transparent;    
-        }
-      }
-    }
+                    &:after {
+                        content: "Color Quiz\A HTML/SCSS/Angularjs \A the SAP \A with color test \A personality";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
 
-    .resume__container {
-      width: 100%;
-      padding: 0 50px 0 10px;
+                &--web2 {
+                    background: #000;
 
-      .resume__contain {
-        padding: 0;
-        border-left: 0;
+                    &:after {
+                        content: "To do list\A HTML/SCSS/JS \A the  simple to do list \A with tasks displayed \A on a single note page";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
 
-        .resume__part {
-          .resume__main {
-            padding-left: 0;
-            &:before {
-              display: none;
+                &--web3 {
+                    background: #000;
+
+                    &:after {
+                        content: "My first game \A HTML/SCSS/jQuery \A the simple game \A with click on the ball";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--web4 {
+                    background: #000;
+
+                    &:after {
+                        content: "Bike Web \A HTML/SCSS/JS \A the exemplary web \A with basic JS";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--web5 {
+                    background: #000;
+
+                    &:after {
+                        content: "Slider \A HTML/SCSS/JS \A a fullscreen slider \A gallery";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--web6 {
+                    background: #000;
+
+                    &:after {
+                        content: "Menu \A HTML/SCSS/JS/ \A jQuery \A the exemplary drill \A down menus \A in JS and jQuery";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--web7 {
+                    background: #000;
+
+                    &:after {
+                        content: "Gallery\A HTML/SCSS/jQuery \A the gallery of \A my own visualisations";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--web8 {
+                    background: #000;
+
+                    &:after {
+                        content: "Photography \A HTML/SCSS \A my first web \A with responsive photos";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
             }
-          }  
-
-          .resume-info {
-            padding-left: 0;
-          }
-        }  
-      }
-    }    
-  
-    .skills__container {
-      width: 100%;
-
-      .skills {
-        width: 100%;
-
-        .skill-item {
-          width: 130px;
-          height: 130px;
-          line-height: 130px;  
-          margin: 20px 10px;
         }
-      } 
-    }     
-  }   
-}  
-
-@media screen and (max-width: 426px)  {
-  .header__container {
-    &-white {
-
-      .menu__container {
-        .menu__icon {
-          &--open {
-            .nav__container {
-              font-size: 20px;
-
-              .menu-prof {
-                padding: 40px 10px 20px 0;
-              }
-
-              .menu-nav {
-                padding-top: 70px;
-              }
-            }  
-          }  
-        }  
-      }
-    }
-  }
-
-  .works__container {
-    .works__items {
-      .works-item {
-        &--web1 {
-          &:hover {
-            background: #000;
-            &::after{
-              display: block;
-            }
-          }
-        }
-  
-        &--web2 {  
-          &:hover {
-            background: #000;
-            &::after{
-              display: block;
-            }
-          }  
-        }
-        
-        &--web3 {
-          &:hover {
-            background: #000;
-            &::after{
-              display: block;
-            }
-          }  
-        }
-  
-        &--web4 {
-          &:hover {
-            background: #000;
-            &::after{
-              display: block;
-            }
-          }  
-        }
-      }
-    }
-  }
-
-  .about__container {
-    .resume__container {
-      padding: 0;
-
-      .resume__contain {
-        padding: 0;
-        padding-bottom: 40px;
-
-        .resume__part {
-          margin-bottom: 30px;
-
-          .resume__main {
-            position: sticky;
-            top: 0;
-            background-color: rgba(0, 0, 0, 0.9);
-            color: #fff;
-            width:100%;
-            padding: 20px 0 20px 10px;
-            border-top: 1px solid #fff;
-
-            &--1 {
-              margin-top: 20px;
-            }
-
-            &--last {
-              text-decoration: none;
-              &:after {
-                content: '';  
-              }
-            }    
-          }
-
-          .resume-info {
-            .info-up, .info-down {
-              padding-left: 10px,
-            }
-          }
-        }
-      }
     }
 
-    .skills__container {
-      .skills-title {
-        padding: 80px 0 40px 0;
-      }
-    }  
-  }  
-} 
+    .about__container {
+        .about-me {
+            width: 85%;
+        }
+
+        .resume__icon {
+            .icon {
+                margin: 0 auto;
+
+                &--active {
+                    background-color: #000;
+                    margin: 0 auto;
+                    color: #fff;
+                    border: 3px solid transparent;
+                }
+            }
+        }
+
+        .resume__container {
+            width: 100%;
+            padding: 0 50px 0 10px;
+
+            .resume__contain {
+                padding: 0;
+                border-left: 0;
+
+                .resume__part {
+                    .resume__main {
+                        padding-left: 0;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+
+                    .resume-info {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        .skills__container {
+            width: 100%;
+
+            .skills {
+                width: 100%;
+
+                .skill-item {
+                    width: 130px;
+                    height: 130px;
+                    line-height: 130px;
+                    margin: 20px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .header__container {
+        &-white {
+
+            .menu__container {
+                .menu__icon {
+                    &--open {
+                        .nav__container {
+                            font-size: 20px;
+
+                            .menu-prof {
+                                padding: 40px 10px 20px 0;
+                            }
+
+                            .menu-nav {
+                                padding-top: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about__container {
+        .about-me {
+            font-size: 18px;
+        }
+
+        .resume__container {
+            padding: 0;
+
+            .resume__contain {
+                padding: 0;
+                padding-bottom: 40px;
+
+                .resume__part {
+                    margin-bottom: 30px;
+
+                    .resume__main {
+                        position: sticky;
+                        top: 0;
+                        background-color: rgba(0, 0, 0, 0.9);
+                        color: #fff;
+                        width: 100%;
+                        padding: 20px 0 20px 10px;
+                        border-top: 1px solid #fff;
+
+                        &--1 {
+                            margin-top: 20px;
+                        }
+
+                        &--last {
+                            text-decoration: none;
+
+                            &:after {
+                                content: '';
+                            }
+                        }
+                    }
+
+                    .resume-info {
+                        .info-up, .info-down {
+                            padding-left: 10px,
+                        }
+                    }
+                }
+            }
+        }
+
+        .skills__container {
+            .skills-title {
+                padding: 80px 0 40px 0;
+            }
+        }
+    }
+}

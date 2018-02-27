@@ -1,0 +1,26 @@
+<div>
+    <div class="question__container" ng-hide="result">
+        <div class="question">{{currentQuestion.name}}</div>
+        <label class="radio" ng-repeat="(key, value) in currentQuestion.answers">
+            <i class="material-icons">panorama_fish_eye</i>
+            <input type="radio" class="" ng-model="quizAnswers[currentIndex]" ng-value="key" ng-change="nextQuestion(key)">
+            {{value}}
+        </label>
+        <div class="progress">
+            <div class="progress-dot" ng-style="{'left':progress}"></div>
+        </div>
+    </div>
+    <div class="result" ng-show="result">
+        Your color is
+        <div class="color-name">
+            <div class="color-rec" ng-class="biggest.name">
+            </div>
+            {{biggest.name}}
+        </div>
+        <div class="color-description">
+            {{biggest.description}}
+        </div>
+    </div>
+</div>
+
+
