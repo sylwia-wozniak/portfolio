@@ -341,6 +341,26 @@ body {
                     }
                 }
             }
+
+            &--web9 {
+                background: transparent url("../img/simrob.jpg") center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: #000;
+
+                    &:after {
+                        content: "Sim-Rob \A HTML/SCSS/JS \A the responsive web \A Sim-Rob";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
     }
 }
@@ -815,7 +835,22 @@ body {
                     background: #000;
 
                     &:after {
-                        content: "Photography \A HTML/SCSS \A my first web \A with responsive photos";
+                        content: "Photography \A HTML/SCSS/JS \A my first web \A with responsive photos";
+                        white-space: pre;
+                        display: table-cell;
+                        height: 180px;
+                        width: 180px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                    }
+                }
+
+                &--web9 {
+                    background: #000;
+
+                    &:after {
+                        content: "Sim-Rob \A HTML/SCSS/JS \A the responsive web \A Sim-Rob";
                         white-space: pre;
                         display: table-cell;
                         height: 180px;

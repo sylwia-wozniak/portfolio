@@ -1,0 +1,15 @@
+Options All -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteCond %{HTTP_HOST} sim-rob\.pl$ [NC]
+RewriteRule ^(.*)$ https://sim-rob.eu/$1 [L,R=301]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 400 https://sim-rob.eu/404.html
+ErrorDocument 403 https://sim-rob.eu/404.html
+ErrorDocument 404 https://sim-rob.eu/404.html
