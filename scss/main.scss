@@ -36,14 +36,14 @@ body {
           left: calc(50% - 18px);
           font-family: "Playfair Display";
           font-size: 40px;
-        }  
+        }
 
         .nav__container {
           display: none;
           overflow: hidden;
           height: 0;
         }
-        
+
         &--open {
           .icon {
             display: none;
@@ -86,7 +86,7 @@ body {
                 }
               }
             }
-          }  
+          }
         }
       }
     }
@@ -109,7 +109,7 @@ body {
       content: "W";
       color: #ffffff;
     }
-  } 
+  }
 
   .down-arrow {
     color:#000;
@@ -119,11 +119,11 @@ body {
     bottom: 20px;
     left: calc(50% - 16.5px);
     font-family: $font-main;
-    font-size: 100px;  
+    font-size: 100px;
     transform: rotate(180deg);
     right: -16.5px;
     text-decoration: none;
-    
+
     &--inverted{
       color:#fff;
       right: auto;
@@ -546,7 +546,7 @@ body {
                 height: 140px;
                 line-height: 140px;
                 vertical-align: middle;
-                font-size: 40px;
+                font-size: 20px;
                 display: inline-block;
                 margin: 20px 10px;
                 border-radius: 50%;
@@ -556,33 +556,6 @@ body {
                 box-shadow: 0 1px 3px 0 rgba(0,0,0,.35), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
                 border: 5px solid transparent;
 
-                .skill-ps {
-                    width: 80%;
-                    margin-top: 35px;
-
-                    &:hover {
-                        opacity: 0.0;
-                    }
-                }
-
-                .skill-ai {
-                    width: 80%;
-                    margin-top: 35px;
-
-                    &:hover {
-                        opacity: 0.0;
-                    }
-                }
-
-                .skill-git {
-                    width: 85%;
-                    margin-top: 40px;
-                }
-
-                .skill-rwd {
-                    width: 85%;
-                    margin-top: 35px;
-                }
 
                 &:after {
                     background-color: #000000;
@@ -591,57 +564,57 @@ body {
                     top: 0;
                     left: 0;
                     color: #fff;
-                    font-size: 0.5em;
+                    font-size: 0.8em;
                     width: 100%;
                     display: none;
                 }
 
-                &--html {
-                    &:after {
-                        content: "HTML";
-                    }
+                &--js {
+                  &:after {
+                    content: "R";
+                  }
+                }
+
+                &--playwright {
+                  &:after {
+                    content: "I";
+                  }
+                }
+
+                &--cypress {
+                  &:after {
+                    content: "S";
+                  }
                 }
 
                 &--css {
+                  &:after {
+                    content: "E";
+                  }
+                }
+
+                &--html {
                     &:after {
-                        content: "CSS/SASS";
+                        content: "H";
                     }
                 }
 
-                &--js {
-                    &:after {
-                        content: "JS";
-                    }
+              &--postman {
+                &:after {
+                  content: "I";
                 }
+              }
 
-                &--ng {
+                &--sql {
                     &:after {
-                        content: "ANGULARJS";
-                    }
-                }
-
-                &--jq {
-                    &:after {
-                        content: "JQUERY";
-                    }
-                }
-
-                &--ps {
-                    &:after {
-                        content: "PS/AI";
+                        content: "G";
                     }
                 }
 
                 &--git {
-                    &:after {
-                        content: "GIT";
-                    }
-                }
-
-                &--rwd {
-                    &:after {
-                        content: "RWD";
-                    }
+                  &:after {
+                    content: "H";
+                  }
                 }
 
                 &:hover {
@@ -670,7 +643,7 @@ body {
     width: 240px;
     text-align: center;
     position: relative;
-    margin: 0 auto;    
+    margin: 0 auto;
     -webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
     box-shadow: 0px 20px 100px 0px rgba(0,0,0,0.3);
@@ -706,7 +679,7 @@ body {
         background-color: #00d9ff;
         -webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
         -moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.15);
-        box-shadow: 0px 0px 120px 0px #00d9ff;  
+        box-shadow: 0px 0px 120px 0px #00d9ff;
       }
     }
   }
