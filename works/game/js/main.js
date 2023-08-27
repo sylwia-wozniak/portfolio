@@ -1,82 +1,96 @@
-$(function() {
-  var $playground = $(this);
-  $('#playground').width = window.innerWidth;
-  $(this).height = window.innerHeight;
-  var defaultOptions = {
+document.addEventListener('DOMContentLoaded', () => {
+  const playground = document.getElementById('playground');
+  const scoreDisplay = document.querySelector('.score');
+  const timerDisplay = document.querySelector('.timer');
+  const ball = document.querySelector('.ball');
+  const startButton = document.querySelector('.start');
+  const finalScoreDisplay = document.querySelector('.final-score');
+  const header = document.querySelector('.header');
+  const defaultOptions = {
     timer: 20,
-    score: 0
+    score: 0,
+  };
+
+  let actualTimer = defaultOptions.timer;
+  let actualScore = defaultOptions.score;
+  let timer;
+
+  function setPlaygroundDimensions() {
+    playground.style.width = window.innerWidth + 'px';
+    playground.style.height = window.innerHeight + 'px';
   }
-  var actualScore = defaultOptions.score;
-  var actualTimer = defaultOptions.timer;
-  $('.score').html(actualScore);
-  $('.timer').html(actualTimer);
-  var timer;
-  var $ball = $('.ball');
 
-  $('.start').click(function(){
-    $('.header').hide();
-    $('#playground').show();
-    timerStart();
-  });
+  function setupStartButton() {
+    startButton.addEventListener('click', () => {
+      header.style.display = 'none';
+      playground.style.display = 'contents';
+      timerDisplay.innerHTML = defaultOptions.timer;
+      scoreDisplay.innerHTML = defaultOptions.score;
+      startTimer();
+    });
+  }
 
-  function timerStart(){
-    timer = setInterval(function(){
+  function startTimer() {
+    timer = setInterval(() => {
       actualTimer--;
-      $('.timer').html(actualTimer);      
-      if(actualTimer < 1) {
+      timerDisplay.innerHTML = actualTimer;
+      if (actualTimer < 1) {
         clearInterval(timer);
         endGame();
       }
-    },1000);
+    }, 1000);
   }
 
   function incrementScore() {
     actualScore++;
-    $('.score').html(actualScore);
+    scoreDisplay.innerHTML = actualScore;
+    return actualScore;
   }
 
   function moveBall() {
-    var y = $(window).height() - 50;
-    var x = $(window).width() - 50;
-    
-    var ny = Math.floor(Math.random() * y);
-    var nx = Math.floor(Math.random() * x);
-    $ball.css({
-      left: nx,
-      top: ny
+    const y = window.innerHeight - 50;
+    const x = window.innerWidth - 50;
+    const ny = Math.floor(Math.random() * y);
+    const nx = Math.floor(Math.random() * x);
+    ball.style.left = nx + 'px';
+    ball.style.top = ny + 'px';
+  }
+
+  function setupBallClick() {
+    ball.addEventListener('click', () => {
+      incrementScore();
+      moveBall();
     });
   }
 
-  $ball.click(function(){
-      incrementScore();
-      moveBall();
-  });
-
-  function endGame(){
-    $('#playground').hide();
-    $('.final-score').show();
-    $('.new').show();
-    if(actualScore >= 15) {
-      $('.final-score').html('Winner!<br>' + actualScore + '<br>');
-    }else{
-      $('.final-score').html('Game Over<br>' + actualScore + '<p>');
-    }
-    restart();
+  function endGame() {
+    playground.style.display = 'none';
+    finalScoreDisplay.style.display = 'block';
+    finalScoreDisplay.innerHTML = actualScore >= 15 ? `Winner!<br>${actualScore}<br>` : `Game Over<br>${actualScore}<p>`;
   }
 
-  function restart(){
+  function resetGame() {
     actualScore = defaultOptions.score;
     actualTimer = defaultOptions.timer;
-    $('.score').html(actualScore);
-    $('.timer').html(actualTimer);
+    scoreDisplay.innerHTML = actualScore;
+    timerDisplay.innerHTML = actualTimer;
   }
 
-  $('.final-score').click(function(){
-    $('.new').hide();
-    $('.final-score').hide();
-    $('#playground').show();
-    timerStart();
-  }); 
-  
+  function setupFinalScoreClick() {
+    finalScoreDisplay.addEventListener('click', () => {
+      finalScoreDisplay.style.display = 'none';
+      playground.style.display = 'contents';
+      resetGame();
+      startTimer();
+    });
+  }
 
+  function initializeGame() {
+    setPlaygroundDimensions();
+    setupStartButton();
+    setupBallClick();
+    setupFinalScoreClick();
+  }
+
+  initializeGame();
 });
