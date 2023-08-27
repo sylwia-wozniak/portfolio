@@ -3,14 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="bbbda253-7768-4b2a-a38d-62d6317de3c0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/adobe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/git.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ps.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/rd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/about_old.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/_head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/demo/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/demo/js/lib/stats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/demo/particles.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/game/particles.js-master/particles.js-master/particles.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +103,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Projects/portfolio",
+    "last_opened_file_path": "C:/Projects/sylwia-wozniak.github.io",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
