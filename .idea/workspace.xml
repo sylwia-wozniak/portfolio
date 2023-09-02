@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbbda253-7768-4b2a-a38d-62d6317de3c0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/about_old.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/basic-website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/basic-website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/basic-website/links/animals.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/basic-website/links/animals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/basic-website/links/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/basic-website/links/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/basic-website/links/landscape.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/basic-website/links/landscape.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/basic-website/links/macro.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/basic-website/links/macro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/basic-website/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/blog_link.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/blog_link.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/product_info_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/product_info_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/colorQuiz/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/colorQuiz/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/colorQuiz/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/colorQuiz/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/gallery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/gallery/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/gallery/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/gallery/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/game/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/list/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/list/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/list/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/en/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/simrob/en/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/en/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/simrob/en/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/simrob/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/simrob/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/demo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/demo/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/demo/js/lib/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/demo/particles.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/simrob/particles.js-master/particles.js-master/particles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/slider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/slider/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/slider/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/slider/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/todolist_own/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/todolist_own/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/todolist_own/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/works/todolist_own/js/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="bbbda253-7768-4b2a-a38d-62d6317de3c0" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
