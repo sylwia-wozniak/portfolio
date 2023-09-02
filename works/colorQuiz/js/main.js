@@ -1,30 +1,27 @@
 (function () {
-    window.onload = init;
+    window.addEventListener('load', init);
 
     function init() {
-        document.onmousemove = getCursorXY;
+        document.addEventListener('mousemove', updateCursorPosition);
     }
 
-    function getCursorXY(e) {
-        var c1 =  event.clientX - 20;
-        var c2 =  event.clientY - 20;
-        var v1 = c1 - 20
-        var v2 = c2 - 20
-        var w1 = c1 - 15
-        var w2 = c2 - 15
+    function updateCursorPosition(event) {
+        const cursorIn = document.querySelector('.cursor-in');
+        const cursorOut = document.querySelector('.cursor-out');
 
-        var cursorIn = document.getElementsByClassName('cursor-in')[0];
-        var cursorOut = document.getElementsByClassName('cursor-out')[0];
+        const offsetX = 20;
+        const offsetY = 20;
 
-        var cursorInClasses = cursorIn.classList;
+        const cursorInClasses = cursorIn.classList;
         cursorInClasses.add('cursor-in--active');
 
-        var cursorOutClasses = cursorOut.classList;
+        const cursorOutClasses = cursorOut.classList;
         cursorOutClasses.add('cursor-out--active');
 
-        cursorIn.style.transform = 'translate(' + w1 + 'px,' + w2 + 'px)';
-        cursorOut.style.transform = 'translate(' + v1 + 'px,' + v2 + 'px)';
+        const cursorInTransform = `translate(${event.clientX - offsetX - 15}px, ${event.clientY - offsetY - 15}px)`;
+        const cursorOutTransform = `translate(${event.clientX - offsetX}px, ${event.clientY - offsetY}px)`;
+
+        cursorIn.style.transform = cursorInTransform;
+        cursorOut.style.transform = cursorOutTransform;
     }
 })();
-
-

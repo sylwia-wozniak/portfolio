@@ -1,43 +1,33 @@
-(function(){
-    var images = document.getElementsByClassName("js-img");//array of dom elements
-    var leftButton = document.getElementsByClassName("button--left")[0];
-    var rightButton = document.getElementsByClassName("button--right")[0];    
+(function () {
+    const images = document.querySelectorAll(".js-img"); // NodeList of DOM elements
+    const leftButton = document.querySelector(".button--left");
+    const rightButton = document.querySelector(".button--right");
 
-    var i=0;
-    var activeImg = images[i];// first img elem
-    activeImg.classList.add('active');
-    rightButton.addEventListener('click', plusSlide);
-    leftButton.addEventListener('click', minusSlide);
-    
-    function plusSlide(){
-        activeImg.classList.remove('active');     
-        if(i>=images.length-1){
-           i=0;
-        }else{
-           i+=1; 
-        }
-        activeImg = images[i];
-        activeImg.classList.add('active');
+    let activeIndex = 0;
+    let activeImg = images[activeIndex]; // First image element
+    activeImg.classList.add("active");
+
+    rightButton.addEventListener("click", () => changeSlide(1));
+    leftButton.addEventListener("click", () => changeSlide(-1));
+
+    function changeSlide(direction) {
+        activeImg.classList.remove("active");
+        activeIndex = (activeIndex + direction + images.length) % images.length;
+        activeImg = images[activeIndex];
+        activeImg.classList.add("active");
     }
 
-    function minusSlide(){
-        activeImg.classList.remove('active');     
-        if(i==0){
-           i=images.length-1;
-        }else{
-           i-=1;
-        }
-        activeImg = images[i];
-        activeImg.classList.add('active');
-    }
     function createSliderNav() {
-        var sliderNav = document.querySelector('.slider__nav');
-        for(var i =0; i<images.length; i++) {
-            var navElement = document.createElement("div");
+        const sliderNav = document.querySelector(".slider__nav");
+        images.forEach((_, index) => {
+            const navElement = document.createElement("div");
             navElement.className = "nav__item";
+            navElement.addEventListener("click", () => {
+                changeSlide(index - activeIndex);
+            });
             sliderNav.appendChild(navElement);
-        }
+        });
     }
+
     createSliderNav();
-    
 })();

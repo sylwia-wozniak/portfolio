@@ -1,57 +1,83 @@
-$(function() {
-    $('a[href^="#"]').click(function() {
-        var target = $(this.hash);
-        if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
-        if (target.length == 0) target = $('html');
-        $('html, body').animate({ scrollTop: target.offset().top }, 500);
-        return false;
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToLinks = document.querySelectorAll('a[href^="#"]');
+    scrollToLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = link.hash.substring(1);
+            const targetElement = document.getElementById(targetId) || document.querySelector(`a[name="${targetId}"]`) || document.documentElement;
+            const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: targetOffset,
+                behavior: "smooth",
+            });
+        });
     });
 
-    $('.js-send-form').on('click', function(e) {
-        e.preventDefault();
-        var $form = $('.js-form');
-        var $success = $('.js-form-success');
-        var $inputs = $form.find('.js-input');
-        var data = {
-            name: '',
-            email: '',
-            subject: '',
-            message: '',
-            gdpr: '',
-        };
+    const sendFormButton = document.querySelector(".js-send-form");
+    if (sendFormButton) {
+        sendFormButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            const form = document.querySelector(".js-form");
+            const successMessage = document.querySelector(".js-form-success");
+            const inputs = form.querySelectorAll(".js-input");
+            const data = {
+                name: "",
+                email: "",
+                subject: "",
+                message: "",
+                gdpr: "",
+            };
 
-        var errors = Object.keys(data).length;
+            let errors = Object.keys(data).length;
 
-        $inputs.each(function (){
-            var $this = $(this);
-            if ($this.val().length <= 0 || ($this.attr('type') === 'checkbox' && !$this.is(':checked'))) {
-                $this.parents('.js-input-parent').addClass('has-error');
-            } else {
-                $this.parents('.js-input-parent').removeClass('has-error');
-                data[$this.attr('name')] = $this.val();
-                errors = errors -1;
-            }
-        });
-
-        if (errors === 0 ) {
-            $.post("https://sim-rob.eu/form.php", data)
-            .done(function( data ) {
-                console.log(data);
-                if(data.status === 'ok') {
-                    $success.slideDown('fast', function() {
-                        $(this)[0].scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    });
-                    $form.slideUp();
+            inputs.forEach(function (input) {
+                if (
+                    input.value.trim().length <= 0 ||
+                    (input.type === "checkbox" && !input.checked)
+                ) {
+                    input.closest(".js-input-parent").classList.add("has-error");
+                } else {
+                    input.closest(".js-input-parent").classList.remove("has-error");
+                    data[input.name] = input.value;
+                    errors--;
                 }
             });
-        }
+
+            if (errors === 0) {
+                fetch("https://sim-rob.eu/form.php", {
+                    method: "POST",
+                    body: JSON.stringify(data),
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log(data);
+                        if (data.status === "ok") {
+                            successMessage.style.display = "block";
+                            successMessage.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                            form.style.display = "none";
+                        }
+                    })
+                    .catch((error) => {
+                        console.error("Error:", error);
+                    });
+            }
+        });
+    }
+
+    const navIcons = document.querySelectorAll(".nav-icon");
+    navIcons.forEach(function (navIcon) {
+        navIcon.addEventListener("click", function () {
+            const nextUl = navIcon.nextElementSibling;
+            if (nextUl) {
+                nextUl.style.display =
+                    nextUl.style.display === "block" ? "none" : "block";
+            }
+            navIcon.classList.toggle("nav-icon-close");
+        });
     });
-
-  $('.nav-icon').click(function() {
-    $(this).next('ul').slideToggle();
-    $(this).toggleClass('nav-icon-close');
-  });
-
 });
