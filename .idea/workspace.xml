@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbbda253-7768-4b2a-a38d-62d6317de3c0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/blog_link.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/blog_link.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/product_info_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/product_info_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/bike_website/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/bike_website/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/game/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/list/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/slider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/slider/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/works/todolist_own/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/todolist_own/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="bbbda253-7768-4b2a-a38d-62d6317de3c0" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +89,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Projects/portfolio",
+    "last_opened_file_path": "C:/Projects/sylwia-wozniak.github.io",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -122,7 +107,6 @@
       <workItem from="1521102683641" duration="2706000" />
       <workItem from="1521146603839" duration="1046000" />
       <workItem from="1693057101132" duration="6341000" />
-      <workItem from="1693747628972" duration="2367000" />
     </task>
     <servers />
   </component>
